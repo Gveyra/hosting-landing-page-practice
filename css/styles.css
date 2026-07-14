@@ -266,6 +266,17 @@ a {
   background: #02cdf1;
 }
 /*Plans*/
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(../css/images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
 @media screen and (min-width: 1024px) {
   .plan__name {
     color: #fff;
@@ -291,4 +302,17 @@ a {
 }
 .plan .list__item {
   margin-bottom: 2rem;
+}
+/*Media*/
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin: 1rem;
 }
