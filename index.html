@@ -1,37 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <section class="block container block-domain"></section>
-        <header class="block__header">
-            <h2>Starting at 9$ per month</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed harum qui consequuntur optio, tenetur libero aspernatur at maxime fuga soluta doloribus error nesciunt ea iure est ad. Ducimus, laborum.</p>
-        </header>
-        <div class="input-group">
-           <input type="text" class="input" placeholder="Enter domain name here..."/>
-           <button class="btn btn--accent"> 
-            <svg class="icon icon--white">
-                <use xlink:href="css/images/sprite.svg#icon-search"></use>
-            </svg>Search</button>
-        </div>
-        <ul class="list block-domain__prices">
-            <li><span class="badge badge--secondary">.com $9</span></li>
-            <li>.sg $10</li>
-            <li>.space $11</li>
-            <li>.info $14</li>
-            <li>.net $10</li>
-            <li>.xyz $10</li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>User-friendly Control Panel</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+          />
+          <img src="images/ipad.png" alt="" />
+        </picture>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image"></div>
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#icon-snap"></use>
+              </svg>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perspiciatis quas explicabo officiis culpa eum, accusamus sunt
+                  quam, quasi corporis excepturi, quidem dolorem consequuntur
+                  rem ut autem? Illo ut est consectetur?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image"></div>
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#icon-growth"></use>
+              </svg>
+              <div class="media__body">
+                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perspiciatis quas explicabo officiis culpa eum, accusamus sunt
+                  quam, quasi corporis excepturi, quidem dolorem consequuntur
+                  rem ut autem? Illo ut est consectetur?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image"></div>
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#icon-wordpress"></use>
+              </svg>
+              <div class="media__body">
+                <h3 class="media__title">Dynamic Caching & More</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perspiciatis quas explicabo officiis culpa eum, accusamus sunt
+                  quam, quasi corporis excepturi, quidem dolorem consequuntur
+                  rem ut autem? Illo ut est consectetur?
+                </p>
+              </div>
+            </div>
+          </li>
         </ul>
+      </div>
     </section>
+
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
